@@ -22,5 +22,11 @@ p = DropboxTeamPOC()
 p.remove_user("dbmid:AAD0useTduC96M4wsXspFiFx-UdzxJ5_h14")
 
 
-Installing my dependencies, I might add more dependencies later. 
+-Installing my dependencies, I might add more dependencies later. 
 pip install python-dotenv requests
+
+-My token Access — Reload Environment Variables
+export DROPBOX_TOKEN=$(grep DROPBOX_TOKEN .env | cut -d'=' -f2-)
+
+-My Streamlit explicitly through the Anaconda binary that already has dotenv
+/opt/anaconda3/bin/streamlit run app.py
