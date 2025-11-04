@@ -11,7 +11,7 @@ The POC demonstrates how SaaS user management can be automated using Python and 
 
 ---
 
-## 🚀 Features
+## Features
 
 | Feature | Description |
 |----------|--------------|
@@ -34,10 +34,15 @@ The POC demonstrates how SaaS user management can be automated using Python and 
 
 ## 📂 Folder Structure
 dropbox-team-poc/
+
 ├── .env # Stores Dropbox token and team ID
+
 ├── dropbox_team_api.py # Main logic for list, invite, and remove users
+
 ├── find_and_remove.py # Helper script to find user ID by email
+
 ├── README.md # You’re reading this file
+
 └── requirements.txt # Dependencies (optional)
 
 ## 🔧 Prerequisites
@@ -110,8 +115,12 @@ python dropbox_team_api.py
 ```
 
 ## API Endpoints Used
-### Action	                Endpoint	                Method
+Action	                    Endpoint	                Method
+
 List Members	            /2/team/members/list_v2	    POST
+
 Add (Invite) Member	        /2/team/members/add	        POST
+
 Remove Member	            /2/team/members/remove	    POST
+
 Get Team Info	            /2/team/get_info	        POST
