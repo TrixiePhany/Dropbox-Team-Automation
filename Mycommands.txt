@@ -1,0 +1,26 @@
+1. Run Initial Python File- python dropbox_team_api.py
+
+2. Provision (Invite) a New User
+python
+(in the python shell)
+from dropbox_team_api import DropboxTeamPOC
+p = DropboxTeamPOC()
+p.invite_user("newuser@example.com", "FirstName", "LastName")
+
+3. Checking Members:
+python dropbox_team_api.py
+(outisde python)
+
+4. Find Member ID by Email (Optional Helper Script)
+python find_and_remove.py
+
+5. Deprovision (Remove) the User
+python
+(in the shell)
+from dropbox_team_api import DropboxTeamPOC
+p = DropboxTeamPOC()
+p.remove_user("dbmid:AAD0useTduC96M4wsXspFiFx-UdzxJ5_h14")
+
+
+Installing my dependencies, I might add more dependencies later. 
+pip install python-dotenv requests
