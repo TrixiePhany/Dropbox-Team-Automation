@@ -3,4 +3,4 @@ __pycache__/
 *.pyc
 audit/
 .env
-Mycommands.txt/
+/Mycommands.txt
